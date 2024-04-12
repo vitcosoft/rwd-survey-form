@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to complete this form.</p>
+
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Enter a name:</label>
+        <input class="block-input" id="name" type="text" required placeholder="Ru Paul">
+      </fieldset>
+
+      <fieldset>
+        <label id="email-label" for="email">Enter an email:</label>
+        <input class="block-input" id="email" type="email" required placeholder="fake@fake.io">
+      </fieldset>
+
+      <fieldset>
+        <label id="number-label" for="number">Enter a number:</label>
+        <input class="block-input" id="number" type="number" min="1" max="100" placeholder="Number">
+      </fieldset>
+
+      <fieldset>
+        <legend>Click one of these dots:</legend>
+        <input type="radio" name="radio" value="radio1" id="radio1" checked>
+        <label for="radio1">Dot</label>
+
+        <input type="radio" name="radio" value="radio2" id="radio2">
+        <label for="radio2">Another dot</label>
+      </fieldset>
+
+      <fieldset>
+        <label for="dropdown">Select one of these options:</label>
+        <select id="dropdown">
+          <option value="" disabled selected>(Select)</option>
+          <option value="1">Option</option>
+          <option value="2">Another option</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Check some of these boxes:</legend>
+        <input id="checkbox1" type="checkbox" value="1">
+        <label for="checkbox1">Box</label>
+
+        <input id="checkbox2" type="checkbox" value="2">
+        <label for="checkbox2">Another box</label>
+
+        <input id="checkbox3" type="checkbox" value="3">
+        <label for="checkbox3">Box three</label>
+      </fieldset>
+
+      <label for="rand-chars">Enter some random characters:</label>
+      <textarea id="rand-chars" name="rand-chars"></textarea>
+
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </div>
+</body>
+</html>
